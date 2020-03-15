@@ -46,7 +46,7 @@ if __name__ == '__main__':
 					break
 
 	with open(args.output, "w", encoding="utf-8") as dest:
-		dest.write("# generatey at {}\n".format(datetime.datetime.now()))
+		dest.write("# generated at {}\n".format(datetime.datetime.now()))
 		dest.writelines(["0.0.0.0 " + d + "\n" for d in domains])
 
 # vim: tabstop=4 shiftwidth=4 noexpandtab ft=python
