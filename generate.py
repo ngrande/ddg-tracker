@@ -56,6 +56,9 @@ if __name__ == '__main__':
 			categories = domain_json['categories']
 			domain = domain_json['domain']
 
+			if domain_json['fingerprinting'] < 2:
+				continue
+
 			if is_whitelisted(categories, categories_whitelist):
 				print("white listed domain: {}".format(domain))
 				continue
